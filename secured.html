@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+<?php
+
+?>
+
+    <head>
+    
+        <title>E-Cab Services </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        
+        <!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	
+	
+	<!-- Load CSS Compilled without JS -->
+	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
+	<link rel="stylesheet" href="_fonts.css">
+        <!-- //custom-theme -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+        
+    </head>
+    
+    
+    <body>
+ 
+    <script type="text/javascript">
+    function passformat5(s,d)
+        {
+var ss=s;
+var dd=d
+                alert("Cab booked from " + ss + " " + "to" + " " + dd +"!!  ThankYou");
+            
+        }
+        
+    </script>
+    
+    
+        <!-- header -->
+        <header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8">
+				<div class="logo" ><a href='index.html'>LetsRide</a></div>
+					<nav class="taxi-options">
+                        <a href="./places/places.html">Nearby Places</a>
+						<a href="Fare.html">Rates</a>
+						<a href="aboutus.html">About Us</a>
+                        
+					</nav>
+				</div>
+                <div>
+                   <nav class="nav nav-tabs navbar-right">
+                       <a href="login.html">SIGN OUT</a>
+                    </nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+ <center>
+<div class="container" style="background-color:lightblue">
+  
+<div class="w3_agileits_main_grid w3l_main_grid">
+		<span class="agileits_grid">
+  <h2>Source Place:</h2>       
+<form action=" ">
+<select name="source" >
+ <option value="Ooty" >Ooty</option>
+ <option value="Coorg" >Coorg</option>
+ <option value="Wayand" >Wayanad</option>
+  <option value="Railway_Station" >Railway Station</option>
+  <option value="Airport" >Airport</option>
+ 
+</select>
+<hr></br>
+    </span>
+	</div>
+       <h2>Destination Place:</h2>   
+<select name="destination">
+ <option value="Ooty" >Ooty</option>
+ <option value="Coorg" >Coorg</option>
+ <option value="Wayand" >Wayanad</option>
+  <option value="Railway_Station" >Railway Station</option>
+  <option value="Airport" >Airport</option>
+ 
+</select>
+  </br> <hr> </br>
+    
+            <h2>Number of Seats:</h2>
+             <label><input type="radio" name="seats" value="1" checked="checked"/>1</label>&ensp;
+    <label> <input type="radio" name="seats" value="2">2 </label>&ensp;
+     <label> <input type="radio" name="seats" value="3">3 </label>&ensp;
+       <label> <input type="radio" name="seats" value="4">4 </label></br><hr>
+          
+             <h2>Cars:</h2>
+
+
+
+    
+<select name="car">
+
+  <option value="sedan" class="form-control">Sedan</option>
+  <option value="xuv" >xuv</option>
+  <option value="mini" >mini</option>
+  <option value="macro" >macro</option>
+</select>
+
+   </br> <hr>  <input type="submit" value="Book Now" onclick = passformat5(source.value,destination.value); class="btn btn-success">
+    
+</div>
+
+ </center>
+        
+        </form>
+
+
+	<!-- Load CSS -->
+	<script>
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+		loadCSS("libs/bootstrap/css/bootstrap.min.css");
+		loadCSS("fonts/flaticons/font/flaticon.css");
+		loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
+		loadCSS("_main.css");                //User Styles: Main
+		loadCSS("_media.css");               //User Styles: Media
+	</script>
+
+	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
+	<script>var ms=document.createElement("link");ms.rel="stylesheet";
+		// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	</script>
+
+      <br>
+              <br>
+    
+     <footer>
+		<div class="container" style='margin-left:15px'>
+			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
+
+                <div class="pull-right">
+                        <p>Copyrights &copy; NIE - ISE 2018</p>  
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Web programming Project
+        </div>
+    </div>
+
+	</footer>
+
+
+        </body>
+</html>
