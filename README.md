@@ -25,7 +25,7 @@ Register-Page:
 
 
 Login-Page:
-![login](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/Signup-page.png)
+![login](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/login%20page.png)
 
 Nearby Outstation Places:
 ![Outstation-Places](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/places1.png)
