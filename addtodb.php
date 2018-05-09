@@ -67,9 +67,9 @@ if($email==NULL || $fname ==NULL || $mob ==NULL)
     $pre="INSERT INTO accounts (uname,pass) VALUES ('$x','$y')";
   
     //insert into userdetails table
-    if($lname==NULL)
+    if($lname==NULL)        //if last-name is empty
     {
-        $lname=" ";
+        $lname="";     //replace with empty string
     }
     $touserdetails="INSERT INTO userdetails VALUES ('$x','$fname', '$lname' , '$mob', '$email')";
 
