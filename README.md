@@ -33,3 +33,8 @@ Nearby Outstation Places:
 Cab Rates:
 ![rates](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/cab-rates-page.png)
 
+
+Project Contributors:
+1. Avinash Kumar
+2. Nesar N
+3. Deeksha M. Kumar
