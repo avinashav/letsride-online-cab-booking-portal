@@ -39,6 +39,8 @@ Project Contributors:
 2. Nesar N
 3. Deeksha M. Kumar
 
-Department of Information Science and Engineering, Mysore.
-6th semester 
-Web Development Lab Project - April 2018
+(6th semester) Web Development Lab Project - April 2018
+
+Department of Information Science and Engineering
+
+The National Institute of Engineering, Mysore, Karnataka.
