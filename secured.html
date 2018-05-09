@@ -2,6 +2,8 @@
 
 <html>
 <?php
+session_start();
+
 
 ?>
 
@@ -38,7 +40,8 @@
 var ss=s;
 var dd=d
                 alert("Cab booked from " + ss + " " + "to" + " " + dd +"!!  ThankYou");
-            
+              // window.location='login.html';
+            window.location.href = "login.htm";
         }
         
     </script>
@@ -116,7 +119,14 @@ var dd=d
 </select>
 
    </br> <hr>  <input type="submit" value="Book Now" onclick = passformat5(source.value,destination.value); class="btn btn-success">
-    
+    <?php
+if($_SESSION["var"]=="true")
+{
+ $_SESSION["var"]="false";
+  header("location: login.html");
+  exit;
+}
+?>
 </div>
 
  </center>
@@ -163,3 +173,8 @@ var dd=d
 
         </body>
 </html>
+
+<?php
+session_destroy();
+
+?>

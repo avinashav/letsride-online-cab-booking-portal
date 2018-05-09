@@ -1,5 +1,4 @@
-
-   <?php
+<?php
             
             $x=$_POST['username1'];
             $y=$_POST['password1'];
@@ -7,8 +6,15 @@
             $username="root";
             $password="";
             $db="test1";
-            $email1=$_POST['email1'];
 
+                //Personal Information
+            $email=$_POST['email'];
+            $fname=$_POST['fname'];
+            $lname=$_POST['lname'];
+            $mob = $_POST['mob'];
+
+
+//If Username Field is Empty
 if($x==NULL)
 {
  
@@ -19,6 +25,8 @@ if($x==NULL)
     //header("Location:register.html");
 }
 
+
+//If Password field is empty
 if($y==NULL)
 {
  
@@ -29,24 +37,54 @@ if($y==NULL)
     //header("Location:register.html");
 }
 
-$len=strlen($y);
-if($len<6 || $len>15)
+//Checking Personal Details
+if($email==NULL || $fname ==NULL || $mob ==NULL)
 {
-     echo "<script type='text/javascript'>alert(' password size incorrect......TRY AGAIN');
+ 
+      echo "<script type='text/javascript'>alert(' Fill All Details Please ..!');
                     window.location='register.html';</script>";
     exit;
+    
+    //header("Location:register.html");
 }
 
-                $link= new mysqli($servername,$username,$password,$db) or die("CANNOT CONNECT");
-             $pre="INSERT INTO accounts (uname,pass) VALUES ('$x','$y')";
-                
-             if(mail("$email1" ,"Welcome to Letsride","thank you for registering with lets ride"))
-             {
-                 echo 'mailsent';
-             }
 
-                $res=mysqli_query($link,"$pre");
-      print "succesfully registered";
-              
-                        header("Location:secured.html");
-    ?>
+  //Varifying password length
+  $len=strlen($y);
+  if($len<6 || $len>15)         
+    {
+        echo "<script type='text/javascript'>alert(' password size incorrect......TRY AGAIN');
+                    window.location='register.html';</script>";
+        exit;
+    }
+
+
+    
+    //connect to database
+    $link= new mysqli($servername,$username,$password,$db) or die("CANNOT CONNECT");
+
+    //Insert into accounts table
+    $pre="INSERT INTO accounts (uname,pass) VALUES ('$x','$y')";
+  
+    //insert into userdetails table
+    if($lname==NULL)
+    {
+        $lname=" ";
+    }
+    $touserdetails="INSERT INTO userdetails VALUES ('$x','$fname', '$lname' , '$mob', '$email')";
+
+
+  if(mail("$email1" ,"Welcome to Letsride","thank you for registering with lets ride"))
+    {
+         echo 'mailsent';
+    }
+
+    $res=mysqli_query($link,"$pre");        //adds to accounts
+
+    $res2=mysqli_query($link,"$touserdetails");        //adds to userdetails
+    
+    print "Succesfully Registered";
+
+    header("Location:secured.html");
+
+?>
