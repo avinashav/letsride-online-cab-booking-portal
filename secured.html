@@ -4,7 +4,6 @@
 <?php
 session_start();
 
-
 ?>
 
     <head>
@@ -29,23 +28,34 @@ session_start();
 <!-- //font-awesome-icons -->
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
         
+        
+
+        
+<!-- //Confirm Booking// -->
+<script type="text/javascript">
+    function confirmbooking(s,d)
+        {
+            var ss=s;
+            var dd=d;
+            
+            if(ss == dd)
+                {
+                    alert("Source and Destination Cannot be Same. !! Choose Appropriate Drop.")
+                }
+            else
+                {
+                    alert("Cab booked from " + ss + " to " + dd +"!!  ThankYou");
+                }
+                // window.location='login.html';
+                //window.location.href = "login.htm";
+        }
+        
+</script>
+        
     </head>
     
     
     <body>
- 
-    <script type="text/javascript">
-    function passformat5(s,d)
-        {
-var ss=s;
-var dd=d
-                alert("Cab booked from " + ss + " " + "to" + " " + dd +"!!  ThankYou");
-              // window.location='login.html';
-            window.location.href = "login.htm";
-        }
-        
-    </script>
-    
     
         <!-- header -->
         <header>
@@ -73,31 +83,35 @@ var dd=d
  <center>
 <div class="container" style="background-color:lightblue">
   
-<div class="w3_agileits_main_grid w3l_main_grid">
-		<span class="agileits_grid">
+<div class="form-group">
+ <span class="agileits_grid">
   <h2>Source Place:</h2>       
-<form action=" ">
-<select name="source" >
- <option value="Ooty" >Ooty</option>
- <option value="Coorg" >Coorg</option>
- <option value="Wayand" >Wayanad</option>
-  <option value="Railway_Station" >Railway Station</option>
-  <option value="Airport" >Airport</option>
+  <form action="">
+     <select class="form-control" name="source">
+        <option value="Ooty" >Ooty</option>
+        <option value="Coorg" >Coorg</option>
+        <option value="Wayand" >Wayanad</option>
+        <option value="Railway_Station" >Railway Station</option>
+        <option value="Airport" >Airport</option>
+      </select>
+      <hr></br>
+  </span>
+</div>
+    
+    <div class="form-group">
+        <span class="agileits_grid">
+        <h2>Destination Place:</h2>   
+        <select class="form-control" name="destination">
+            <option value="Ooty" >Ooty</option>
+            <option value="Coorg" >Coorg</option>
+            <option value="Wayand" >Wayanad</option>
+            <option value="Railway_Station" >Railway Station</option>
+            <option value="Airport" >Airport</option>
  
-</select>
-<hr></br>
-    </span>
-	</div>
-       <h2>Destination Place:</h2>   
-<select name="destination">
- <option value="Ooty" >Ooty</option>
- <option value="Coorg" >Coorg</option>
- <option value="Wayand" >Wayanad</option>
-  <option value="Railway_Station" >Railway Station</option>
-  <option value="Airport" >Airport</option>
- 
-</select>
-  </br> <hr> </br>
+        </select>
+        </span>
+    </div>
+    </br> <hr> </br>
     
             <h2>Number of Seats:</h2>
              <label><input type="radio" name="seats" value="1" checked="checked"/>1</label>&ensp;
@@ -109,17 +123,22 @@ var dd=d
 
 
 
-    
-<select name="car">
+    <div class="form-group">
+        <span class="agileits_grid">
+        <select class="form-control" name="car">
 
-  <option value="sedan" class="form-control">Sedan</option>
-  <option value="xuv" >xuv</option>
-  <option value="mini" >mini</option>
-  <option value="macro" >macro</option>
-</select>
+            <option value="sedan" class="form-control">Sedan</option>
+            <option value="xuv" >xuv</option>
+            <option value="mini" >mini</option>
+            <option value="macro" >macro</option>
+        </select>
+        </span>
+    </div>
+   </br> <hr>  <input type="submit" class="btn btn-success" value="Book Now" onclick = confirmbooking(source.value,destination.value);>
 
-   </br> <hr>  <input type="submit" value="Book Now" onclick = passformat5(source.value,destination.value); class="btn btn-success">
-    <?php
+
+
+<?php
 if($_SESSION["var"]=="true")
 {
  $_SESSION["var"]="false";
@@ -127,6 +146,9 @@ if($_SESSION["var"]=="true")
   exit;
 }
 ?>
+
+
+
 </div>
 
  </center>
@@ -171,10 +193,11 @@ if($_SESSION["var"]=="true")
 	</footer>
 
 
-        </body>
+</body>
 </html>
 
 <?php
+
 session_destroy();
 
 ?>
