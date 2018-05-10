@@ -41,11 +41,18 @@ Nearby Outstation Places:
 Cab Rates:
 ![rates](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/cab-rates-page.png)
 
+Admin Privileges:
+Accounts Table:
+![accounts-info]()
+
+userdetails table:
+![users-info]()
+
 
 Project Contributors:
-1. Avinash Kumar
-2. Nesar N
-3. Deeksha M. Kumar
+1. **Avinash Kumar** (*avinash.softs@gmail.com*)
+2. **Nesar N** (*nnsnesar@gmail.com)
+3. **Deeksha M. Kumar** (*deekshamkumar@gmail.com*)
 
 (6th semester) Web Development Lab Project - April 2018
 
