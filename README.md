@@ -51,7 +51,7 @@ userdetails table:
 
 Project Contributors:
 1. **Avinash Kumar** (*avinash.softs@gmail.com*)
-2. **Nesar N** (*nnsnesar@gmail.com)
+2. **Nesar N** (*nnsnesar@gmail.com*)
 3. **Deeksha M. Kumar** (*deekshamkumar@gmail.com*)
 
 (6th semester) Web Development Lab Project - April 2018
