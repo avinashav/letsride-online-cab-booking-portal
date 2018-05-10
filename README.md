@@ -43,10 +43,10 @@ Cab Rates:
 
 Admin Privileges:
 Accounts Table:
-![accounts-info]()
+![accounts-info](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/accounts.png)
 
 userdetails table:
-![users-info]()
+![users-info](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/userdetails.png)
 
 
 Project Contributors:
