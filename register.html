@@ -6,19 +6,22 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type = "text/css"/>
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style type="text/css">
 		html,
 		body {
 		  height:100%;
 		}
-	</style>
-    
-    
-      
-   
-</head>
+        #textgap{
+            padding-top: 5px;
+        }
+	</style> 
 
+</head>
 <body class="body" style="background-color:#f6f6f6">
 	<div class="container-fluid" style="min-height:95%; ">
 		<div class="row">
@@ -29,7 +32,7 @@
 			  <div class="col-sm-10">
 				  <br>
 				  <center>
-				  <h1><strong>E-Cab SignUp</strong></h1>
+				  <h1><strong>LetsRide SignUp</strong></h1>
 				  </center>
 			  </div>
 		</div><hr>
@@ -57,43 +60,30 @@
 			<br><br>
 			   
 
-             <div class = "col-sm-6 col-sm-offset-3">
-    <h3>Login</h3>
-        <p style="color: red;">
-           
-        </p>
-
-
-
+<div class = "col-sm-6 col-sm-offset-3">
 <form action='addtodb.php' method="POST" enctype='multipart/form-data'>
-
 
 <div class="form-row">
     <div class="col">
         <label>NAME <input type="text" class="form-control" name="fname" placeholder="First name"> </label>
     </div>
-    <div class="col">
+    <div class="col" id="textgap">
          <input type="text" class="form-control" name="lname" placeholder="Last name">
     </div>
     
-    <div class="col">
+    <div class="col" id="textgap">
         <label>MOBILE <input type="text" class="form-control" name="mob" placeholder="+91"> </label>
     </div>
   </div>
-
-
-
     
-    <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
+    <div class="form-group" id="textgap">
+        <label for="exampleInputEmail1">E-Mail</label>
         <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
-    
-
      <div class="form-group">
-        <label for="formGroupExampleInput">USER NAME</label>
+        <label for="formGroupExampleInput">UserName</label>
          <input type="text"  name="username1" class="form-control" id="formGroupExampleInput" placeholder="USERNAME">
       </div>
 
@@ -106,25 +96,25 @@
   <button type="submit" class="btn btn-success" onclick="redirectTo('secured.html')">Sign Up</button>
     <button type="reset" class="btn">Reset</button>
   </form>
-
-    <br>
-              <br>
-    
+</div>
+</div>
+</div>
+</div>
+</div>
      <footer>
 		<div class="container" style='margin-left:15px'>
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 
                 <div class="pull-right">
-                        <p>Copyrights &copy; NIE - ISE 2018</p>  
+                        Made with <span class="glyphicon glyphicon-heart"></span> in NIE, Mysore |
+                        ©
             <script>
                 document.write(new Date().getFullYear())
             </script>
             Web programming Project
         </div>
     </div>
-
 	</footer>
-
 </body>
 
 </html>
