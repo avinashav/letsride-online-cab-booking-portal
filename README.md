@@ -29,20 +29,20 @@ Index-Page:
 ![index-page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/index%20page.png)
 
 Register-Page:
-![Register-Page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/Signup-page.png)
+![Register-Page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/signup.png)
 
 
 Login-Page:
-![login](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/login%20page.png)
+![login-page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/login.png)
 
 Nearby Outstation Places:
 ![Outstation-Places](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/places1.png)
 
 Cab Rates:
 ![rates](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/cab-rates-page.png)
-
-Admin Privileges:
-Accounts Table:
+<p align="center">
+**Administrative Privilege**
+Accounts Table:</p>
 ![accounts-info](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/accounts.png)
 
 userdetails table:
