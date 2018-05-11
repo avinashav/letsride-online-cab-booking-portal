@@ -40,12 +40,11 @@ Nearby Outstation Places:
 
 Cab Rates:
 ![rates](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/cab-rates-page.png)
-<p align="center">
-**Administrative Privilege**
-Accounts Table:</p>
+
+**accounts table:**
 ![accounts-info](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/accounts.png)
 
-userdetails table:
+**userdetails table:**
 ![users-info](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/userdetails.png)
 
 
