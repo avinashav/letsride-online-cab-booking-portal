@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
 
+
+echo ' <!DOCTYPE html>
 <html>
-
-
     <head>
     
         <title>LetsRide - Online Cab Booking Portal</title>
@@ -26,15 +27,45 @@
         
         
     </head>
+    <body>';
     
-    <body>
-    
-        <!-- header -->
+
+    if(isset($_SESSION["var"]))
+    {
+        echo ' <!DOCTYPE html>
+        
         <header>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-				<div class="logo" ><a href='index.html'>LetsRide</a></div>
+				<div class="logo" ><a href="index.php">LetsRide</a></div>
+					<nav class="taxi-options">
+						<a href="login.html">Order a taxi</a>
+                        <a href="./places/places.html">Nearby Places</a>
+						<a href="Fare.html">Rates</a>
+						<a href="aboutus.html">About Us</a>
+                        
+					</nav>
+                    </div>
+                <div>
+                   <nav class="nav nav-tabs navbar-right">
+                       <a href="disconnect.php">SIGN OUT</a>
+                    </nav>
+				</div>
+				
+			</div>
+		</div>
+	</header>';
+    
+    }
+    else
+    {
+        echo ' <!DOCTYPE html>
+        <header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8">
+				<div class="logo" ><a href="index.php">LetsRide</a></div>
 					<nav class="taxi-options">
 						<a href="login.html">Order a taxi</a>
                         <a href="./places/places.html">Nearby Places</a>
@@ -52,8 +83,11 @@
 				
 			</div>
 		</div>
-	</header>
-                <!-- single row -->
+	</header>';
+    }
+
+echo '
+<!-- single row -->
                 <div class="single-row">
                 
                     <!-- col-left -->
@@ -71,7 +105,7 @@
                         <a href="#" class="btn"> Take A Tour</a>
                         
                     </div>
-                <table border="3" cellpadding="0" cellspacing="0">
+                <table border="5" cellpadding="0" cellspacing="0">
 	<tbody>
 		<tr>
 			<td>
@@ -227,7 +261,7 @@
     <div class="clear-fix"></div>
         <!-- footer -->
         <footer>
-		<div class="container" style='margin-left:15px'>
+		<div class="container" style="margin-left:15px">
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 <br>
                 <div class="pull-right">
@@ -272,5 +306,6 @@
             
     </body>
 
+</html>';
 
-</html>
+?>

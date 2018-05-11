@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-
-<html>
 <?php
 session_start();
 
-?>
 
-    <head>
+if(isset($_SESSION["var"]))
+{
+    echo ' <!DOCTYPE html>
+<head>
     
         <title>E-Cab Services </title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,13 +25,12 @@ session_start();
 <!-- //js -->
 <!-- font-awesome-icons -->
 <!-- //font-awesome-icons -->
-<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
         
         
-
         
-<!-- //Confirm Booking// -->
-<script type="text/javascript">
+        
+<script type ="text/javascript">
     function confirmbooking(s,d)
         {
             var ss=s;
@@ -46,7 +44,7 @@ session_start();
                 {
                     alert("Cab booked from " + ss + " to " + dd +"!!  ThankYou");
                 }
-                // window.location='login.html';
+                // window.location="login.html";
                 //window.location.href = "login.htm";
         }
         
@@ -62,7 +60,7 @@ session_start();
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-				<div class="logo" ><a href='index.html'>LetsRide</a></div>
+				<div class="logo" ><a href="index.php">LetsRide</a></div>
 					<nav class="taxi-options">
                         <a href="./places/places.html">Nearby Places</a>
 						<a href="Fare.html">Rates</a>
@@ -72,7 +70,7 @@ session_start();
 				</div>
                 <div>
                    <nav class="nav nav-tabs navbar-right">
-                       <a href="login.html">SIGN OUT</a>
+                       <a href="disconnect.php">SIGN OUT</a>
                     </nav>
 				</div>
 			</div>
@@ -137,18 +135,6 @@ session_start();
    </br> <hr>  <input type="submit" class="btn btn-success" value="Book Now" onclick = confirmbooking(source.value,destination.value);>
 
 
-
-<?php
-if($_SESSION["var"]=="true")
-{
- $_SESSION["var"]="false";
-  header("location: login.html");
-  exit;
-}
-?>
-
-
-
 </div>
 
  </center>
@@ -178,7 +164,7 @@ if($_SESSION["var"]=="true")
               <br>
     
      <footer>
-		<div class="container" style='margin-left:15px'>
+		<div class="container" style="margin-left:15px">
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 
                 <div class="pull-right">
@@ -194,10 +180,13 @@ if($_SESSION["var"]=="true")
 
 
 </body>
-</html>
+</html>';
 
-<?php
-
-session_destroy();
-
+}
+else
+{
+    echo "You must be logged in to see this page";
+    header("location: login.html");
+    exit;
+}
 ?>
