@@ -40,10 +40,10 @@ echo ' <!DOCTYPE html>
 				<div class="col-sm-8">
 				<div class="logo" ><a href="index.php">LetsRide</a></div>
 					<nav class="taxi-options">
-						<a href="login.html">Order a taxi</a>
-                        <a href="./places/places.html">Nearby Places</a>
-						<a href="Fare.html">Rates</a>
-						<a href="aboutus.html">About Us</a>
+						<a href="login.php">Order a taxi</a>
+                        <a href="./places/places.php">Nearby Places</a>
+						<a href="Fare.php">Rates</a>
+						<a href="aboutus.php">About Us</a>
                         
 					</nav>
                     </div>
@@ -67,17 +67,17 @@ echo ' <!DOCTYPE html>
 				<div class="col-sm-8">
 				<div class="logo" ><a href="index.php">LetsRide</a></div>
 					<nav class="taxi-options">
-						<a href="login.html">Order a taxi</a>
-                        <a href="./places/places.html">Nearby Places</a>
-						<a href="Fare.html">Rates</a>
-						<a href="aboutus.html">About Us</a>
+						<a href="login.php">Order a taxi</a>
+                        <a href="./places/places.php">Nearby Places</a>
+						<a href="Fare.php">Rates</a>
+						<a href="aboutus.php">About Us</a>
                         
 					</nav>
                     </div>
                 <div>
                    <nav class="nav nav-tabs navbar-right">
-                       <a href="login.html">SIGN IN</a>
-                       <a href="register.html">SIGN UP</a>
+                       <a href="login.php">SIGN IN</a>
+                       <a href="register.php">SIGN UP</a>
                     </nav>
 				</div>
 				
@@ -120,7 +120,7 @@ echo '
 		</tr>
 		<tr>
 			<td>
-			<p><a href="./places/places.html">Ooty</a></p>
+			<p><a href="./places/places.php">Ooty</a></p>
 			</td>
 			<td>
 			<p class="justify">125 km</p>
@@ -131,7 +131,7 @@ echo '
 		</tr>
 		<tr>
 			<td>
-			<p><a href="./places/places.html">Coorg</a></p>
+			<p><a href="./places/places.php">Coorg</a></p>
 			</td>
 			<td>
 			<p class="justify">129 km</p>
@@ -142,7 +142,7 @@ echo '
 		</tr>
 		<tr>
 			<td>
-			<p><a href="./places/places.html">Bandipur</a></p>
+			<p><a href="./places/places.php">Bandipur</a></p>
 			</td>
 			<td>
 			<p class="justify">80 km</p>
@@ -153,7 +153,7 @@ echo '
 		</tr>
 		<tr>
 			<td>
-			<p><a href="./places/places.html">Wayanad</a></p>
+			<p><a href="./places/places.php">Wayanad</a></p>
 			</td>
 			<td>
 			<p class="justify">119 km</p>
@@ -164,7 +164,7 @@ echo '
 		</tr>
 		<tr>
 			<td>
-			<p><a href="./places/places.html">Bangalore</a></p>
+			<p><a href="./places/places.php">Bangalore</a></p>
 			</td>
 			<td>
 			<p class="justify">147 km</p>

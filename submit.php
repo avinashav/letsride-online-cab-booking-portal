@@ -35,6 +35,6 @@
             {
     
                 echo "<script type='text/javascript'>alert('Wrong Username or Password......TRY AGAIN');
-                    window.location='login.html';</script>";
+                    window.location='login.php';</script>";
             }
 ?>

@@ -1,4 +1,16 @@
+<?php
+session_start();
+
+
+if(isset($_SESSION["var"]))
+    {
+       header("location: secured.php");
+        exit;
+    }
+else
+{
     
+echo ' <!DOCTYPE html>    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,15 +67,14 @@
 		  <br>
 
 		  <br>
-		   <!-- Great, til you resize .affix will fix the side so it stays as you scroll but next one doesn't -->
 			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
 			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
 			  <ul class="nav nav-pills nav-stacked">
-				<li><a href='index.php'>Home</a></li>
-                  <li><a href='Fare.html'>Cab Rates</a></li>
-                <li><a href='login.html'>Login</a></li>
-                <li><a href='register.html'>Register</a></li>
-				<li><a href='aboutus.html'>About Us</a></li>
+				<li><a href="index.php">Home</a></li>
+                  <li><a href="Fare.php">Cab Rates</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+				<li><a href="aboutus.php">About Us</a></li>
                   
 			  </ul>
 			</div> <!--well bs-sidebar affix-->
@@ -71,11 +82,11 @@
             
             
 <div class="col-sm-10">
-<div class='container-fluid'>
+<div class="container-fluid">
 <br><br>  
     <div class = "col-sm-6 col-sm-offset-3">
     <h3>Login</h3>
-    <form action="submit.php" method='POST' enctype='multipart/form-data'>
+    <form action="submit.php" method="POST" enctype="multipart/form-data">
         <div class="form-group has-error">
           <!-- Username -->
           <label class="control-label"  for="{{ form.username.id_for_label }}">Username</label>
@@ -109,7 +120,7 @@
 
             
     <footer>
-		<div class="container" style='margin-left:15px'>
+		<div class="container" style="margin-left:15px">
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 
                 <div class="pull-right">
@@ -126,4 +137,9 @@
 
 </body>
 
-</html>
+</html>';
+    
+}
+
+
+?>

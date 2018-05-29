@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+
+if(isset($_SESSION["var"]))
+    {
+       header("location: secured.php");
+        exit;
+    }
+else
+{
+    
+echo ' <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,26 +54,26 @@
 		  <br>
 
 		  <br>
-		   <!-- Great, til you resize .affix will fix the side so it stays as you scroll but next one doesn't -->
+		   <!-- Great, til you resize .affix will fix the side so it stays as you scroll but next one doesn"t -->
 			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
 			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
 			  <ul class="nav nav-pills nav-stacked">
-				<li><a href='index.php'>Home</a></li>
-                  <li><a href='fare.html'>Cab Fare</a></li>
-                <li><a href='login.html'>Login</a></li>
-                <li><a href='register.html'>Register</a></li>
-				<li><a href='aboutus.html'>About Us</a></li>
+				<li><a href="index.php">Home</a></li>
+                  <li><a href="fare.php">Cab Fare</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+				<li><a href="aboutus.php">About Us</a></li>
 			  </ul>
 			</div> <!--well bs-sidebar affix-->
 		  </div> <!--col-sm-2-->
 		  <div class="col-sm-10">
 
-			<div class='container-fluid'>
+			<div class="container-fluid">
 			<br><br>
 			   
 
 <div class = "col-sm-6 col-sm-offset-3">
-<form action='addtodb.php' method="POST" enctype='multipart/form-data'>
+<form action="addtodb.php" method="POST" enctype="multipart/form-data">
 
 <div class="form-row">
     <div class="col">
@@ -79,7 +91,7 @@
     <div class="form-group" id="textgap">
         <label for="exampleInputEmail1">E-Mail</label>
         <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+         <small id="emailHelp" class="form-text text-muted">We"ll never share your email with anyone else.</small>
     </div>
 
      <div class="form-group">
@@ -93,7 +105,7 @@
       <input type="password" name="password1" class="form-control" id="exampleInputPassword1" placeholder="Min 6 max 15 char">
    </div>            
       
-  <button type="submit" class="btn btn-success" onclick="redirectTo('secured.html')">Sign Up</button>
+  <button type="submit" class="btn btn-success" onclick="redirectTo("secured.php")">Sign Up</button>
     <button type="reset" class="btn">Reset</button>
   </form>
 </div>
@@ -102,7 +114,7 @@
 </div>
 </div>
      <footer>
-		<div class="container" style='margin-left:15px'>
+		<div class="container" style="margin-left:15px">
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 
                 <div class="pull-right">
@@ -117,5 +129,10 @@
 	</footer>
 </body>
 
-</html>
+</html>';
+    
+}
+
+
+?>
                

@@ -19,10 +19,10 @@ if($x==NULL)
 {
  
       echo "<script type='text/javascript'>alert(' Username cannot be empty......TRY AGAIN');
-                    window.location='register.html';</script>";
+                    window.location='register.php';</script>";
     exit;
     
-    //header("Location:register.html");
+    //header("Location:register.php");
 }
 
 
@@ -31,10 +31,10 @@ if($y==NULL)
 {
  
       echo "<script type='text/javascript'>alert(' password cannot be empty......TRY AGAIN');
-                    window.location='register.html';</script>";
+                    window.location='register.php';</script>";
     exit;
     
-    //header("Location:register.html");
+    //header("Location:register.php");
 }
 
 //Checking Personal Details
@@ -42,10 +42,10 @@ if($email==NULL || $fname ==NULL || $mob ==NULL)
 {
  
       echo "<script type='text/javascript'>alert(' Fill All Details Please ..!');
-                    window.location='register.html';</script>";
+                    window.location='register.php';</script>";
     exit;
     
-    //header("Location:register.html");
+    //header("Location:register.php");
 }
 
 
@@ -54,7 +54,7 @@ if($email==NULL || $fname ==NULL || $mob ==NULL)
   if($len<6 || $len>15)         
     {
         echo "<script type='text/javascript'>alert(' password size incorrect......TRY AGAIN');
-                    window.location='register.html';</script>";
+                    window.location='register.php';</script>";
         exit;
     }
 

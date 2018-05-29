@@ -44,8 +44,6 @@ if(isset($_SESSION["var"]))
                 {
                     alert("Cab booked from " + ss + " to " + dd +"!!  ThankYou");
                 }
-                // window.location="login.html";
-                //window.location.href = "login.htm";
         }
         
 </script>
@@ -62,9 +60,9 @@ if(isset($_SESSION["var"]))
 				<div class="col-sm-8">
 				<div class="logo" ><a href="index.php">LetsRide</a></div>
 					<nav class="taxi-options">
-                        <a href="./places/places.html">Nearby Places</a>
-						<a href="Fare.html">Rates</a>
-						<a href="aboutus.html">About Us</a>
+                        <a href="./places/places.php">Nearby Places</a>
+						<a href="Fare.php">Rates</a>
+						<a href="aboutus.php">About Us</a>
                         
 					</nav>
 				</div>
@@ -186,7 +184,7 @@ if(isset($_SESSION["var"]))
 else
 {
     echo "You must be logged in to see this page";
-    header("location: login.html");
+    header("location: login.php");
     exit;
 }
 ?>

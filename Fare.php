@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+
+
+echo ' <!DOCTYPE html>
 <html>
 <head>
 
@@ -32,12 +37,12 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-				<div class="logo" ><a href='index.php'>LetsRide</a></div>
+				<div class="logo" ><a href="index.php">LetsRide</a></div>
 					<nav class="taxi-options">
-						<a href="login.html">Order a taxi</a>
-                        <a href="./places/places.html">Nearby Places</a>
-						<a href="Fare.html">Rates</a>
-						<a href="aboutus.html">About Us</a>
+						<a href="login.php">Order a taxi</a>
+                        <a href="./places/places.php">Nearby Places</a>
+						<a href="Fare.php">Rates</a>
+						<a href="aboutus.php">About Us</a>
                         
 					</nav>
                     </div>
@@ -149,7 +154,7 @@
 	 <br><br>
     
      <footer>
-		<div class="container" style='margin-left:15px'>
+		<div class="container" style="margin-left:15px">
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 
                 <div class="pull-right">
@@ -164,4 +169,7 @@
 	</footer>
 
 </body>
-</html>
+</html>';
+
+
+?>

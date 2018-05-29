@@ -18,12 +18,12 @@ echo ' <!DOCTYPE html>
         }
         h1{text-align: center;
             font-style: bold;
-            font-family: 'Do Hyeon', sans-serif;
+            font-family: "Do Hyeon", sans-serif;
         }
         p{  margin: auto;
             padding: inherit;
             text-align: center;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: "Ubuntu", sans-serif;
         }
         h2{
             font-style: bold;
@@ -63,12 +63,12 @@ echo ' <!DOCTYPE html>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
-				<div class="logo" ><a href='../index.php'>LetsRide</a></div>
+				<div class="logo" ><a href="../index.php">LetsRide</a></div>
 					<nav class="taxi-options">
                         <a href="../index.php">Home</a>
-						<a href="../login.html">Book a Ride</a>
-						<a href="../Fare.html">Fare Details</a>
-						<a href="../aboutus.html">About Us</a>
+						<a href="../login.php">Book a Ride</a>
+						<a href="../Fare.php">Fare Details</a>
+						<a href="../aboutus.php">About Us</a>
                         
 					</nav>
                     </div>				
@@ -156,7 +156,7 @@ echo ' <!DOCTYPE html>
      <br><br>  
     
      <footer>
-		<div class="container" style='margin-left:15px'>
+		<div class="container" style="margin-left:15px">
 			<a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a>
 
                 <div class="pull-right">
@@ -171,8 +171,5 @@ echo ' <!DOCTYPE html>
 	</footer>
 </body>
 </html>';
-    
-}
-
 
 ?>
