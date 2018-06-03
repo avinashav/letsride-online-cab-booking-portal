@@ -21,12 +21,12 @@ Step 2: Run XAMPP software, then start Apache and MySql servers.
 Step 3: in phpmyadmin create a database called **test1** and then a table **accounts** with 'uname' and 'pass' as table entity, uname (primary-key) and pass should be varchar.
 Table **userdetails** with enitities as follows: username(foreign-key), firstname, lastname, mobile-no(primary-key), emailid, all will be varchar(30).
 
-Step 4: in browser address bar type "http://localhost" and enter, click the project file to run.
+Step 4: in browser address bar type "http://localhost/" and enter, click the project file to run.
 
 
 SCREENSHOTS:
 Index-Page:
-![index-page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/index%20page.png)
+![index-page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/index_page.png)
 
 Register-Page:
 ![Register-Page](https://github.com/avinashav/letsride-online-cab-booking-portal/blob/master/screenshot/signup.png)
