@@ -9,7 +9,7 @@ echo ' <!DOCTYPE html>
 
 	<meta charset="utf-8">
 
-	<title>BookMyTaxi - Taxi for people</title>
+	<title>LetsRide - Fare Details</title>
 	<meta name="description" content="">
 
 	<style></style>

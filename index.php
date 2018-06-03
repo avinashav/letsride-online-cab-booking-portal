@@ -245,7 +245,7 @@ echo '
                         <h2>EASY LAYOUT</h2>
                         <p>Car Rentals has a customer focussed approach and is appreciated and cherished across all regions in India. It has the largest operational network and biggest fleet size that enables its customers to choose their favourite car model.
                         Choose any type of vehicle from a range of hatchbacks, sedans or MUV, depending upon your liking, pocket size and number of people travelling. We offer our customers a journey with world class services, trained and polite drivers and well maintained cars when they book an intercity taxi in Mysore through us.
-                        The most advantageous aspect is that our’s outstation car rental in Mysore will be price competitive. Experience best in class services via Mysore outstation taxi. To get additional details about outstation taxi service in Mysore, please call us on 09045450000. Our seasoned customer care executive will answer all your queries and provide best packages and offers for Mysore outstation cabs.</p>
+                        The most advantageous aspect is that our’s outstation car rental in Mysore will be price competitive. Experience best in class services via Mysore outstation taxi. To get additional details about outstation taxi service in Mysore, please call us on 090454XXXXX. Our seasoned customer care executive will answer all your queries and provide best packages and offers for Mysore outstation cabs.</p>
                         <a href="#" class="btn-info">More Info</a>
                     
                     </div>

@@ -11,7 +11,7 @@ echo ' <!DOCTYPE html>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
-<title>Oustation</title>
+<title>LetsRide - Places Nearby Mysuru</title>
     <style>
         body{
             background-color: white;
@@ -83,7 +83,7 @@ echo ' <!DOCTYPE html>
         <div><img src= "./ooty2.jpeg" alt = "Ooty" width="350" height="250"></div>
         <div><img src = "ooty3.jpeg" alt = "Ooty" width="350" height="250"></div>
         <div><img src = "ooty4.jpeg" alt = "Ooty" width="350" height="250"></div>
-        </div>
+        
 <p> Ooty is a hill station located in North West Tamil Nadu. A town filled with a plethora of parks, nature reserves and safari routes, Ooty is a popular tourist destination during the summer because of the pleasant climate and wonderful scenery. 
         </p></div>
      

@@ -85,6 +85,6 @@ if($email==NULL || $fname ==NULL || $mob ==NULL)
     
     print "Succesfully Registered";
 
-    header("Location:secured.html");
+    header("Location:secured.php");
 
 ?>
