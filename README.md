@@ -1,4 +1,11 @@
 # letsride-online-cab-booking-portal
+---------
+
+**PROJECT IS STILL UNDER CONSTRUCTION PHASE**
+more Tables needed to be linked (i.e. cab, driver, ride-history tables)
+
+---------
+
 LetsRide - An online cab booking portal built using HTML , CSS , Javascript and PHP + My-SQL (backend)
 The Project was developed for presentation as 6th semester Lab-Project. 
 To Run the project, we need to Install Xampp Software for running Apache server and My-SQL for database.
