@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <title>Photoes - Avinash</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/cool-icon.png">
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,h1,h2,h3,h4,h5 {
+            font-family: "Raleway", sans-serif
+        }
+        
+        .w3-quarter img{
+            margin-bottom: -6px; 
+            cursor: pointer
+        }
+        
+        .w3-quarter img:hover{
+            opacity: 0.6; 
+            transition: 0.3s
+        }
+    </style>
+    
+    
+<body class="w3-black">
+    
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+        <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a> 
+        <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PHOTOS</a>
+        <a href="./index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PROJECTS</a>
+        <a href="./index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-black w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Avinash's Collection</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+    
+<!--
+<!-- Navbar on small screens (Hidden on medium and large screens) --/>
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+-->
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+        <!-- Photo grid -->
+        <div class="w3-row w3-grayscale-min">
+            <div class="w3-quarter">
+                <img src="./images/photos/br-hills1.jpeg" style="width:100%" onclick="onClick(this)" alt="BR HILLS, Karnataka<br> Dec - 2017 <br> Bike ride from Mysore to BR-Hills was sexy. Nice atmosphere, cold breeze, no tourist spot but 1 temple. view from temple to valley is amazing.">
+                <img src="./images/photos/hang-kota.jpeg" style="width:100%" onclick="onClick(this)" alt="Hanging Bridge, Kota, Rajasthan<br> Feb - 2015 <br>6-lane cable-stayed bridge has been built across the Chambal river at Kota. <br>The time I visited, it was still under construction.">
+                <img src="./images/photos/chennai.jpeg" style="width:100%" onclick="onClick(this)" alt="Marina Beach, Tamil Nadu <br> Dec - 2016 <br>A fantastic beach which is spread across several miles. After our 3rd semester exam, while going back to home, we got a 5  hours stop journey at Chennai Centeral railway station, searched for nearby places to visit and got Marina beach on map.">
+                <img src="./images/photos/br-hills3.jpg" style="width:100%" onclick="onClick(this)" alt="BR HILLS, Karnataka<br> Dec - 2017 <br> The best thing to do at BR-Hills is to click pictures :p">
+            </div>
+    
+    <div class="w3-quarter">
+        <img src="./images/photos/deloitte.jpg" style="width:100%" onclick="onClick(this)" alt="Deloitte University, Hi-Tech City, Hyderabad<br> April - 2018 <br>TechnoUtsav - 2018, a National Level competition where 28,000+ students across 52+ campuses, 9500+ students participate in the first round, 5100+students qualifying for the Second and further rounds and the final top 31 teams at the Grand Finale! <br> We were one of the 20 TECH-E grand finalists and our Theme was Blockchain.">
+        <img src="./images/photos/india-gate.jpeg" style="width:100%" onclick="onClick(this)" alt="INDIA GATE<br> April - 2015 <br> My favourite on place in Delhi, best time to visit is in the evening with your family and friends.">
+        <img src="./images/photos/kuntibetta2.jpeg" style="width:100%" onclick="onClick(this)" alt="Kuntibetta, Karnataka<br>April - 2016 <br>Quiet Peaceful day at Kuntibetta. Cold, but beautiful.  Started trekking @ 4:00am and reached the top at 6:30am . WOW !! Awesome">
+    </div>
+    
+    <div class="w3-quarter">
+        <img src="./images/photos/deloitte2.JPG" style="width:100%" onclick="onClick(this)" alt="Deloitte University, Hi-Tech City, Hyderabad<br> April - 2018 <br> Final Prize distribution ceremony. 30 teams, super talented people... unforgettable memories.">
+        <img src="./images/photos/kuntibetta1.jpeg" style="width:100%" onclick="onClick(this)" alt="Kuntibetta, Karnataka<br>April - 2016 <br>Quiet Peaceful day at Kuntibetta. Cold, but beautiful. Spent around 3-4 hours on top and later with sun getting hotter, climbed down.">
+        <img src="./images/photos/krs-mys2.jpeg" style="width:100%" onclick="onClick(this)" alt="KRS Backwaters, Mysore <br> March - 2016 <br>Amazing place. It is so relaxing sitting on the banks of the backwaters">
+        <img src="./images/photos/kuntibetta3.jpeg" style="width:100%" onclick="onClick(this)" alt="Kuntibetta, Karnataka<br>April - 2016 <br> A memorable trekking, we were around 15 college friends. ">
+    </div>
+
+    <div class="w3-quarter">
+        <img src="./images/photos/ooty-garden.jpeg" style="width:100%" onclick="onClick(this)" alt="Botanical Garden, Ooty <br> March - 2016<br>A boy surrounded by beautiful nature :) haha . It's really worth to visit if you are coming to ooty don't miss this place. But carry one umbrella coz any time it may rain in ooty.">
+        <img src="./images/photos/gaipernath-kota.jpeg" style="width:100%" onclick="onClick(this)" alt="Gaipernath Waterfall , Kota<br> Feb - 2015 <br>Booked OLA and travelled 25km to reach here :D But in order to get down, you have to walk like a thousand steps which offcourse is tiring but its worth it. Nature at its best.">
+        <img src="./images/photos/chamundi.JPG" style="width:100%" onclick="onClick(this)" alt="Chamundeshwari Temple, Mysore<br> Oct - 2017 <br> What a beautiful scenery from up, you can see the whole mysore from here. We climbed 1000 stairs to reach to the top of chamundi hill. superb experience.">
+        <img src="./images/photos/krs-mys1.jpeg" style="width:100%" onclick="onClick(this)" alt="KRS Backwaters, Mysore <br> March - 2016 <br>Amazing place. It is so relaxing sitting on the banks of the backwaters, also there's a temple recently built.">
+            </div>
+        </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge">
+    <a href="http://fb.me/mr.av.avinash" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="http://instagram.com/avinash__av_/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Avinash_softs" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <br>
+    <a href="https://github.com/avinashav" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="http://linkedin.com/in/avianshav/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">&copy; Avinash Kumar - 2018</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+</script>
+
+</body>
+</html>
